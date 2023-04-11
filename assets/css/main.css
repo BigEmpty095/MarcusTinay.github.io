@@ -1515,13 +1515,13 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(245, 106, 106, 0.05); }
+    background-color: rgba(82, 82, 82, 0.05); }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: rgba(245, 106, 106, 0.15); }
+    background-color: rgba(209, 209, 209, 0.15); }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
@@ -2272,3 +2272,32 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+    .container {
+      overflow: hidden;
+    }
+    
+    .filterDiv {
+
+      display: none; /* Hidden by default */
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    .btn {
+
+      cursor: pointer;
+    }
+    
+    /* Add a light grey background on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    /* Add a dark background to the active button */
+    .btn.active {
+      background-color: #dbdbdb;
+    }

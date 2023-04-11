@@ -84,10 +84,19 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Data Analysis & Visualization</h2>
+										<h2>My Projects</h2>
+										<!-- Control buttons -->
+										<div id="myBtnContainer">
+											<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+											<button class="btn" onclick="filterSelection('PowerBI')"> PowerBI</button>
+											<button class="btn" onclick="filterSelection('Python')"> Python</button>
+											<button class="btn" onclick="filterSelection('Tableau')"> Tableau</button>
+											<button class="btn" onclick="filterSelection('Excel')"> Excel</button>
+											<button class="btn" onclick="filterSelection('SQL')"> SQL</button>
+										</div>										
 									</header>
 									<div class="posts">
-										<article>
+										<article class="filterDiv Tableau">
 											<a href="https://public.tableau.com/app/profile/marcus.tinay/viz/CustomerSalesDashboard_16811840931390/Dashboard?publish=yes" target="_blank" class="image"><img src="images/Cash Register.jpg" alt="" /></a>
 											<h3>Customer Sales Dashboard with Tableau</h3>
 											<p>A dashboard showcasing how several sales KPIs can be tracked in a single Tableau visualization. The data is shared on OneDrive.</p>
@@ -95,7 +104,7 @@
 												<li><a href="https://public.tableau.com/app/profile/marcus.tinay/viz/CustomerSalesDashboard_16811840931390/Dashboard?publish=yes" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv PowerBI">
 											<a href="https://1drv.ms/b/s!AllHnvHUXS9jgiNbYvJFGgxenvVu?e=Q1gY0g" target="_blank" class="image"><img src="images/Survey.jpg" alt="" /></a>
 											<h3>Survey Response Visualization with PowerBI</h3>
 											<p>A dashboard reflecting various demographic insights from data professional survey responses. The data is visualized in Microsoft PowerBI and shared on OneDrive as a .pdf file. The original .pbix file is available for download 
@@ -104,7 +113,7 @@
 												<li><a href="https://1drv.ms/b/s!AllHnvHUXS9jgiNbYvJFGgxenvVu?e=Q1gY0g" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Python">
 											<a href="https://github.com/BigEmpty095/My-Projects/blob/main/Movies%20Correlation%20Project.ipynb" target="_blank" class="image"><img src="images/Movie Theater.jpg" alt="" /></a>
 											<h3>Movie Metric Correlation Analysis with Python</h3>
 											<p>An analysis of the correlation between various film production metrics such as gross revenue compared to budget using Python. This project utilizes libraries including pandas, numpy, and seaborn to perform and visualize the analysis.</p>
@@ -112,7 +121,7 @@
 												<li><a href="https://github.com/BigEmpty095/My-Projects/blob/main/Movies%20Correlation%20Project.ipynb" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Python">
 											<a href="https://github.com/BigEmpty095/My-Projects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" target="_blank" class="image"><img src="images/Web Scraping.jpg" alt="" /></a>
 											<h3>Web Scraping a Product Price on Amazon with Python</h3>
 											<p>Scraping specific HTML ids from a webpage, creating a .csv file, and loading the data into the .csv file with Python. The function can be run at regular intervals and appends the created .csv file.</p>
@@ -120,7 +129,7 @@
 												<li><a href="https://github.com/BigEmpty095/My-Projects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Tableau">
 											<a href="https://public.tableau.com/app/profile/marcus.tinay/viz/GoldPriceDashboard/Dashboard?publish=yes" target="_blank" class="image"><img src="images/Gold Bars.jpg" alt="" /></a>
 											<h3>Gold Price Data Vizualization with Tableau</h3>
 											<p>A simple dashboard reflecting gold price and volume over a five year period. Data set discovered on Kaggle and visualized using Tableau. The data is shared on OneDrive.</p>
@@ -128,7 +137,7 @@
 												<li><a href="https://public.tableau.com/app/profile/marcus.tinay/viz/GoldPriceDashboard/Dashboard?publish=yes" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Tableau">
 											<a href="https://public.tableau.com/app/profile/marcus.tinay/viz/ShortTermRentalAnalysisDashboard/Dashboard" target="_blank" class="image"><img src="images/Bedroom.jpg" alt="" /></a>
 											<h3>Short Term Rental Data Visualization with Tableau</h3>
 											<p>A dashboard reflecting short-term rental pricing volume and other metrics for Seattle, WA in 2016, created in Tableau. The data is shared on OneDrive.</p>
@@ -136,7 +145,7 @@
 												<li><a href="https://public.tableau.com/app/profile/marcus.tinay/viz/ShortTermRentalAnalysisDashboard/Dashboard" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Tableau">
 											<a href="https://public.tableau.com/app/profile/marcus.tinay/viz/Covid-19Dashboard_16808364838200/Dashboard1?publish=yes" target="_blank" class="image"><img src="images/Covid.jpg" alt="" /></a>
 											<h3>Covid-19 Data Visualization with Tableau</h3>
 											<p>An obligatory Covid-19 dashboard created in Tableau. Source data was originally loaded into Microsoft SQL Server, queried, exported into Excel, and loaded into Tableau. The queries and data are shared on OneDrive.</p>
@@ -144,7 +153,7 @@
 												<li><a href="https://public.tableau.com/app/profile/marcus.tinay/viz/Covid-19Dashboard_16808364838200/Dashboard1?publish=yes" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Excel">
 											<a href="https://1drv.ms/x/s!AllHnvHUXS9jgQIWXdMPM5cnv_YT?e=b4VHH6" target="_blank" class="image"><img src="images/Project Management.jpg" alt="" /></a>
 											<h3>Project Dashboard with Microsoft Excel</h3>
 											<p>An interesting project management dashboard made in Excel and shared on OneDrive. This project demonstrates the importance of utilizing a proper project managment tool, as well as showcasing the strengths and weaknesses of Excel.</p>
@@ -152,7 +161,7 @@
 												<li><a href="https://1drv.ms/x/s!AllHnvHUXS9jgQIWXdMPM5cnv_YT?e=b4VHH6" target="_blank" class="button">View Project</a></li>
 											</ul>
 										</article>
-										<article>
+										<article class="filterDiv Excel">
 											<a href="https://1drv.ms/x/s!AllHnvHUXS9jfkTWR1f0tX-BgWU?e=gRd9Wx" target="_blank" class="image"><img src="images\Bicycles.jpg" alt="" /></a>
 											<h3>Bike Sales Dashboard with Microsoft Excel</h3>
 											<p>A simple bike sales demographic dashboard made in Excel and shared on OneDrive. Although this project's data has limited practical value, the visualization is a good example of something well suited to Excel.</p>
